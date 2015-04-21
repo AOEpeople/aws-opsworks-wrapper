@@ -7,9 +7,9 @@ You should set the AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY environment variable
 
 In order to run one of the scripts just trigger:
 
-`bundle exec ruby <script> [options]`
-`bundle exec ruby deploy.rb -s "Ecommerce-Staging" -a "Magento"`
-`bundle exec ruby recipe.rb -s "Ecommerce-Production" -l "Magento" -r "axalta::_opsworks_magento_createbackup"`
+    bundle exec ruby <script> [options]
+    bundle exec ruby deploy.rb -s "Ecommerce-Staging" -a "Magento"
+    bundle exec ruby recipe.rb -s "Ecommerce-Production" -l "Magento" -r "project::_createbackup"
 
 Scripts
 =======
@@ -24,7 +24,7 @@ Scripts
 Installation
 =======
 
-   $ bundle install --path .bundle
-   or:
-   $ bundle install --standalone
+    $ bundle install --path .bundle
+    or:
+    $ bundle install --standalone
 
