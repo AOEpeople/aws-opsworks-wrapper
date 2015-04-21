@@ -24,7 +24,7 @@ Scripts
 Installation
 =======
 
-  $ bundle install --path .bundle
-  or:
-  $ bundle install --standalone
+   $ bundle install --path .bundle
+   or:
+   $ bundle install --standalone
 
