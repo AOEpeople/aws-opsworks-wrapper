@@ -34,7 +34,7 @@ exit 11 if options[:stack].nil?
 exit 12 if options[:app].nil?
 exit 13 if !ENV['AWS_ACCESS_KEY_ID'] || !ENV['AWS_SECRET_ACCESS_KEY']
 
-options[:layer] |= options[:app]
+options[:layer] = options[:layer] || options[:app]
 
 s = stack(options[:stack])
 deployment_data = run_and_wait({
