@@ -14,12 +14,15 @@ In order to run one of the scripts just trigger:
 Scripts
 =======
 
-| Script        | Description                                                                        |
-|---------------|------------------------------------------------------------------------------------|
-| `describe.rb` | shows all available stacks, apps, layers and related instances                     |
-| `deploy.rb`   | triggers a plain deploy command for a app on all instances in the layer            |
-| `snapshot.rb` | creates volume snapshots for a specific volume or all volumes of a layer           |
-| `recipe.rb`   | triggers a custom recipe                                                           |
+| Script                  | Description                                                                        |
+|-------------------------|------------------------------------------------------------------------------------|
+| `delete_snapshots.rb`   | deletes older snapshots than x days                                                |
+| `describe.rb`           | shows all available stacks, apps, layers and related instances                     |
+| `deploy.rb`             | triggers a plain deploy command for a app on all instances in the layer            |
+| `list.rb`               | list snapshots for an account of for a specific volume id                          |
+| `snapshot.rb`           | creates volume snapshots for a specific volume or all volumes of a layer           |
+| `snapshot_root.rb`      | creates volume snapshots for a specific volume or all root volumes of a layer      |
+| `recipe.rb`             | triggers a custom recipe                                                           |
 
 Installation
 =======

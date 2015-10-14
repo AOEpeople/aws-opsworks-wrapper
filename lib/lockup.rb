@@ -71,5 +71,14 @@ module Aws
       ids
     end
 
+    def layer_root_volumes(name, stack)
+      instances = layer_instances(name, stack)
+      ids = []
+      instances.each do |instance|
+        ids.push instance.root_device_volume_id
+      end
+      ids
+    end
+
   end
 end
